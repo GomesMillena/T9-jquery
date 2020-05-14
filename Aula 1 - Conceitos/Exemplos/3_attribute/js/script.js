@@ -1,15 +1,19 @@
-/*
+
 $(document).ready(function() {
-    $('p').html('Olá é igual a'
-    <span class= "cor">Hello</span>
-    <strong>Darkness</strong>);
 
-    $('li').addClass('margin')
+    $('p').html(`Olá é igual a 
+    <span class="cor">Hello</span>
+    <strong>Darkness</strong>
+    `
+    );
 
-    $('li').remeveClass('item1')
+    $('li').addClass("margin")
 
-    $('p').click(function() {
-        $(this).toggleClass('destaque')
+    $('li').removeClass("item1")
+
+
+    $("p").click(function() {
+        $(this).toggleClass("destaque")
     })
 })
-*/
+
