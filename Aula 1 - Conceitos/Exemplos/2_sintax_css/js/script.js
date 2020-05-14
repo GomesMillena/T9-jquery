@@ -1,0 +1,45 @@
+$(document).ready(function() {
+
+//chamando pela tag
+$('h1').css('color','#f66')
+$('h1').css('font-size','50px')
+$('h1').hide();
+$('h1').delay('2000'); //2000 = 2s
+$('h1').fadeIn('slow');
+$('h1').text('Ola meninas');
+
+//encadeamento de bloco
+$('h1')
+  .css('color', '#f66')
+  .hide()
+  .delay('5000')
+  .fadeIn('slow')
+  .text('Surpresa!')
+
+//chamando pela classe
+$('.item1').click(function() {
+    $('body').css('background', 'blue')
+    $('h1').css('color', '#fff')
+});
+
+//obj
+$('li').css( {
+    color: '#000',
+    display: 'flex',
+    padding: '20px',
+})
+
+//pelo ID
+$('#item2').css('color', 'yellow')
+
+//
+$('*').css('margin-left', '200px')
+
+$('h1, #item2, .item1').css('border-bottom', '3px solid blue')
+
+//exemplos css de parentesco
+$('div > p')
+$('td, th')
+
+
+})

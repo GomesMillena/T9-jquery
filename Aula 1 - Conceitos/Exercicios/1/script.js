@@ -6,6 +6,11 @@
     
 */
 
+$('biscoito').click(function() {
+  let fraseSorte= Math.floor(Math.random()*frases.length)
+  $('#message').text(frases[fraseSorte])
+})
+
 const frases = [
     "A vida trará coisas boas se tiveres paciência.",
     "Demonstre amor e alegria em todas as oportunidades e verás que a paz nasce dentro de você.",

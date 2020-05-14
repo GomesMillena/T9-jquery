@@ -5,3 +5,31 @@
   - Você pode criar uma função "changeBg" que será responsável pela lógica dessa alteração
   - Extra: Modifiquem o estilo da página para ela ficar com a sua cara!
 */
+
+//jQuery
+
+$(document).ready(function() {
+ 
+  let bodyColor = $('body')
+  bodyColor.css('background', 'yellow')
+
+  function changeBg() {
+    if(bodyColor[0].style.background == 'yellow') {
+      $('body').css('background', 'black');
+      $('h1')
+      .css('color', 'white')
+      .text('Desligado')
+      $('imagem').attr('src', "https://media.giphy.com/media/3KVRMtLXfORVosk6TW/giphy.gif")
+    } else {
+      $('body').css('background', 'yellow');
+      $('h1')
+      .css('color', 'black')
+      .text('Ligado')
+      $('imagem').attr('src', "https://media.giphy.com/media/up8gI8DCcdd1S/giphy.gif")
+
+    } 
+  }
+  $('#botao').click(function() {
+    changeBg()
+  })
+})
